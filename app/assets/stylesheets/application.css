@@ -1,41 +1,70 @@
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- */
+* This is a manifest file that'll be compiled into application.css, which will include all the files
+* listed below.
+*
+* Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+* or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+*
+* You're free to add application-wide styles to this file and they'll appear at the bottom of the
+* compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+* files in this directory. Styles in this file should be added after the last require_* statement.
+* It is generally better to create a new file per style scope.
+*
+*/
 
 
- @import "bootstrap-sprockets";
- @import "bootstrap";
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
- header {
-     background-color: black;
+.container.message{
+  padding: 0px;
 
-     #logo {
-         float: left;
-        margin-top: 16px;
-     }
+  #notice {
+    background-color: $brand-info;
+    margin-bottom: 0px;
+    padding-left: 15px;
+  }
 
-     nav {
-         float: right;
-     }
- }
+  #alert {
+    background-color: $brand-danger;
+    margin-bottom: 0px;
+    padding-left: 15px;
+    h3 {
+      margin-top: 0;
+    }
+  }
+}
 
- .welcome_page {
-     text-align: center;
-     .welcome_nev {
-         margin-top: 20px;
-     }
- }
+header {
+  background-color: black;
 
- .users_page {
-     text-align: center;
- }
+  #logo {
+    float: left;
+    padding: 15px;
+    margin-left: -15px;
+    &:hover {
+      background-color: $gray-lighter;
+    }
+  }
+
+  nav {
+    float: right;
+  }
+}
+
+.welcome_page {
+  text-align: center;
+  .welcome_nev {
+    margin-top: 20px;
+  }
+}
+
+.users_page {
+  text-align: center;
+}
+
+.user_show_gravatar {
+  margin: 10px 0px;
+  width: 20%;
+  height: 20%;
+}
