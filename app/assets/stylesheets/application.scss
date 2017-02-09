@@ -1,23 +1,11 @@
 /*
-* This is a manifest file that'll be compiled into application.css, which will include all the files
-* listed below.
-*
-* Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
-* or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
-*
-* You're free to add application-wide styles to this file and they'll appear at the bottom of the
-* compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
-* files in this directory. Styles in this file should be added after the last require_* statement.
-* It is generally better to create a new file per style scope.
-*
-*= require rails_bootstrap_forms
-*/
-
+  *= require rails_bootstrap_forms
+ */
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-.container.message{
+.message{
   padding: 0px;
 
   #notice {
@@ -30,9 +18,10 @@
     background-color: $brand-danger;
     margin-bottom: 0px;
     padding-left: 15px;
+
     h3 {
       margin-top: 0;
-    }
+      }
   }
 }
 
@@ -43,9 +32,10 @@ header {
     float: left;
     padding: 15px;
     margin-left: -15px;
+
     &:hover {
       background-color: $gray-lighter;
-    }
+      }
   }
 
   nav {
@@ -66,7 +56,6 @@ header {
 .application_user_gravatar {
   width: 18px;
   height: 18px;
-
 }
 
 .user_show_gravatar {
